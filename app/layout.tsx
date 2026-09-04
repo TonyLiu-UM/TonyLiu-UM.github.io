@@ -1,9 +1,14 @@
 import type { Metadata } from 'next';
-import { Inter, Manrope } from 'next/font/google';
+import { Inter, Newsreader } from 'next/font/google';
 import './globals.css';
 
-const manrope = Manrope({ variable: '--font-sans', subsets: ['latin'] });
-const inter = Inter({ variable: '--font-serif', subsets: ['latin'] });
+const inter = Inter({ variable: '--font-sans', subsets: ['latin'] });
+const newsreader = Newsreader({
+  variable: '--font-display',
+  subsets: ['latin'],
+  weight: ['500', '600'],
+  style: ['normal', 'italic'],
+});
 
 export const metadata: Metadata = {
   title: 'Guanyu Liu — Research',
@@ -11,5 +16,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body className={`${manrope.variable} ${inter.variable}`}>{children}</body></html>;
+  return <html lang="en"><body className={`${inter.variable} ${newsreader.variable}`}>{children}</body></html>;
 }

@@ -183,7 +183,7 @@ export default function Home() {
             <a href="#publications">Publications</a>
           </nav>
           <div className="nav-actions">
-            <a className="nav-email" href="mailto:dc32352@um.edu.mo"><Mail size={14} /> Email</a>
+            <a className="nav-email" href="mailto:tonyliugy011@gmail.com"><Mail size={14} /> Email</a>
             <a className="nav-cv" href="/Guanyu_Liu_CV.pdf" target="_blank">CV <ArrowUpRight size={14} /></a>
           </div>
         </div>
@@ -201,7 +201,7 @@ export default function Home() {
             <li><BriefcaseBusiness size={16} /> <a href="http://nlp2ct.cis.um.edu.mo/" target="_blank">NLP2CT Lab</a></li>
           </ul>
           <div className="profile-links">
-            <a href="mailto:dc32352@um.edu.mo"><Mail size={16} /> Email</a>
+            <a href="mailto:tonyliugy011@gmail.com"><Mail size={16} /> Email</a>
             <a href="/Guanyu_Liu_CV.pdf" target="_blank"><FileText size={16} /> Curriculum Vitae</a>
           </div>
         </aside>
@@ -297,7 +297,7 @@ export default function Home() {
               <span className="eyebrow">Let’s talk research</span>
               <h2>I am always happy to discuss reliable agents, language-model reasoning, and learning from imperfect feedback.</h2>
             </div>
-            <a href="mailto:dc32352@um.edu.mo">Email me <ArrowUpRight size={17} /></a>
+            <a href="mailto:tonyliugy011@gmail.com">Email me <ArrowUpRight size={17} /></a>
           </section>
 
           <footer>

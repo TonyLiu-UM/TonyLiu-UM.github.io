@@ -56,13 +56,13 @@ const projects = [
     role: 'Supervised by Prof. Derek F. Wong',
   },
   {
-    title: 'Selection-Aware Self-Evolution',
-    subtitle: 'When verifiable feedback can still lie',
+    title: 'Self-Evolving Agents for Quant Research',
+    subtitle: 'Reliable improvement from backtesting feedback',
     status: 'Ongoing · with Dr. Meng Qu',
     tone: 'ongoing',
-    copy: 'Evidence-gated updates, sealed replication, and selective consolidation for agents learning from adaptively selected backtest feedback.',
-    result: 'Using quantitative research as a controlled environment for studying recursive self-improvement.',
-    role: 'Self-evolving agents',
+    copy: 'Studying how agents can generate, test, and refine quantitative research ideas while controlling for leakage, adaptive selection, and misleading backtest evidence.',
+    result: 'Exploring evidence-gated updates, sealed replication, and selective consolidation of reusable research skills.',
+    role: 'Quantitative finance · Self-evolving agents',
   },
   {
     title: 'Lean2Isabelle',
@@ -162,12 +162,10 @@ export default function Home() {
               <p>
                 I am interested in a deceptively simple question: <em>when AI systems learn from feedback, how do they know what to trust?</em>
               </p>
-              <p>
-                My recent work explores reliable self-evolving agents, language-model reasoning and post-training, and learning under imperfect supervision.
-              </p>
+              <p>My recent work explores reliable self-evolving agents, language-model reasoning and post-training, and learning under imperfect supervision.</p>
             </div>
             <p className="intro-note">
-              Previously, I was a Visiting Student at <strong>MAPLE Lab, Westlake University</strong>, advised by <strong>Prof. Guojun Qi</strong>. I am also working with <strong>Dr. Meng Qu</strong> on self-evolving agents in quantitative research environments.
+              Previously, I was a Visiting Student at <strong>MAPLE Lab, Westlake University</strong>, advised by <strong>Prof. Guojun Qi</strong>. I am also working with <strong>Dr. Meng Qu</strong> on self-evolving agents for quantitative research and finance.
             </p>
           </section>
 

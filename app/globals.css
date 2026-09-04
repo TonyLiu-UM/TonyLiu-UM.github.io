@@ -25,7 +25,7 @@ body {
     linear-gradient(90deg, rgba(255,255,255,.16) 1px, transparent 1px) 0 0 / 72px 72px,
     var(--page);
   color: var(--ink);
-  font-family: var(--font-serif), Georgia, serif;
+  font-family: var(--font-serif), Arial, sans-serif;
   font-size: 17px;
   line-height: 1.62;
   -webkit-font-smoothing: antialiased;
@@ -106,7 +106,7 @@ a { color: inherit; text-decoration: none; }
 }
 .profile-rail h2 { margin: 0; font-size: 22px; line-height: 1.2; letter-spacing: -.025em; }
 .profile-role { margin: 7px 0 0; color: var(--ink-soft); font-size: 14px; font-weight: 600; }
-.profile-interest { margin: 13px 0 22px; max-width: 210px; color: var(--blue-deep); font-family: var(--font-serif), Georgia, serif; font-size: 16px; line-height: 1.42; }
+.profile-interest { margin: 13px 0 22px; max-width: 210px; color: var(--blue-deep); font-family: var(--font-serif), Arial, sans-serif; font-size: 15px; font-weight: 500; line-height: 1.48; }
 .profile-facts { margin: 0; padding: 18px 0; border-block: 1px solid var(--line); list-style: none; }
 .profile-facts li { min-height: 31px; display: flex; align-items: center; gap: 10px; color: #596873; font-size: 13px; }
 .profile-facts svg, .profile-links svg { color: var(--blue-deep); flex: 0 0 auto; }
@@ -125,7 +125,7 @@ a { color: inherit; text-decoration: none; }
   margin: 4px 0 20px;
   font-family: var(--font-sans), Arial, sans-serif;
   font-size: clamp(2.8rem, 6vw, 5rem);
-  font-weight: 700;
+  font-weight: 680;
   letter-spacing: -.06em;
   line-height: 1;
 }
@@ -136,7 +136,7 @@ a { color: inherit; text-decoration: none; }
   background: linear-gradient(135deg, rgba(231,246,248,.96), rgba(255,255,255,.94));
   box-shadow: var(--shadow);
 }
-.welcome-card p { margin: 0 0 13px; text-wrap: pretty; }
+.welcome-card p { margin: 0 0 13px; text-wrap: pretty; letter-spacing: -.008em; }
 .welcome-card p:last-child { margin-bottom: 0; }
 .welcome-card strong, .intro-note strong { color: #294d58; font-weight: 650; }
 .welcome-card em { color: #155c70; font-style: normal; font-weight: 600; }

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Inter_Tight, Source_Serif_4 } from 'next/font/google';
+import { Inter, Manrope } from 'next/font/google';
 import './globals.css';
 
-const interTight = Inter_Tight({ variable: '--font-sans', subsets: ['latin'] });
-const sourceSerif = Source_Serif_4({ variable: '--font-serif', subsets: ['latin'] });
+const manrope = Manrope({ variable: '--font-sans', subsets: ['latin'] });
+const inter = Inter({ variable: '--font-serif', subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Guanyu Liu — Research',
@@ -11,5 +11,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body className={`${interTight.variable} ${sourceSerif.variable}`}>{children}</body></html>;
+  return <html lang="en"><body className={`${manrope.variable} ${inter.variable}`}>{children}</body></html>;
 }

@@ -13,6 +13,14 @@ const newsreader = Newsreader({
 export const metadata: Metadata = {
   title: 'Guanyu Liu — Research',
   description: 'Guanyu Liu studies reliable self-evolving agents, language-model reasoning, and learning under imperfect feedback.',
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

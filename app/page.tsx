@@ -191,7 +191,9 @@ export default function Home() {
 
       <div className="page-shell">
         <aside className="profile-rail" aria-label="Profile">
-          <div className="portrait-mark" aria-hidden="true"><span>GL</span></div>
+          <div className="portrait-mark">
+            <img src="/guanyu-liu.jpg" alt="Guanyu Liu" />
+          </div>
           <h2>Guanyu Liu</h2>
           <p className="profile-role">Undergraduate researcher</p>
           <p className="profile-interest">Reliable self-evolving agents, reasoning, and verification.</p>

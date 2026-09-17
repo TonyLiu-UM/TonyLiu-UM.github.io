@@ -214,21 +214,17 @@ export default function Home() {
             <h1>How can AI improve without trusting the wrong feedback?</h1>
             <div className="welcome-card">
               <p>
-                I am a final-year undergraduate in <strong>Statistics and Data Science</strong> at the <a href="https://www.um.edu.mo/" target="_blank"><strong>University of Macau</strong></a>. At the <a href="http://nlp2ct.cis.um.edu.mo/" target="_blank"><strong>NLP2CT Lab</strong></a>, I work with <a href="https://www.fst.um.edu.mo/personal/derek-wong/" target="_blank"><strong>Prof. Derek F. Wong</strong></a> on language-model reasoning.
+                I am a final-year undergraduate in <strong>Statistics and Data Science</strong> at the <a href="https://www.um.edu.mo/" target="_blank"><strong>University of Macau</strong></a>. I currently work with <a href="https://www.fst.um.edu.mo/personal/derek-wong/" target="_blank"><strong>Prof. Derek F. Wong</strong></a> at the <a href="http://nlp2ct.cis.um.edu.mo/" target="_blank"><strong>NLP2CT Lab</strong></a> on long-form language-model reasoning and stable error recovery, and with <a href="https://fic.um.edu.mo/zh-hant/people/mengqu/" target="_blank"><strong>Dr. Meng Qu</strong></a> on self-evolving agents for quantitative research. Previously, I was a Visiting Student at MAPLE Lab, Westlake University, advised by <a href="https://en.westlake.edu.cn/faculty/guojun-qi.html" target="_blank"><strong>Prof. Guojun Qi</strong></a>, where I studied target-label-free prompt selection under distribution shift.
               </p>
               <p>
-                I keep returning to one question: <em>how can an AI system improve from feedback without letting unreliable evidence corrupt its next decision?</em>
+                Across these projects, I keep returning to one question: <em>how can an AI system improve from feedback without letting unreliable evidence corrupt its next decision?</em>
               </p>
-              <p>I study this problem at three levels: deciding when to spend or reuse computation, turning outcomes into persistent agent strategies, and repairing errors once they have entered a reasoning chain.</p>
             </div>
             <div className="credibility-strip" aria-label="Selected research highlights">
               <span><strong>PRICAI 2026</strong> · Sole author</span>
               <span><strong>ICML 2026 AI for Math</strong> · Co-first author</span>
               <span><strong>NLP2CT Lab</strong> · University of Macau</span>
             </div>
-            <p className="intro-note">
-              Previously, I was a Visiting Student at MAPLE Lab, Westlake University, advised by <a href="https://en.westlake.edu.cn/faculty/guojun-qi.html" target="_blank"><strong>Prof. Guojun Qi</strong></a>. I am also working with <a href="https://fic.um.edu.mo/zh-hant/people/mengqu/" target="_blank"><strong>Dr. Meng Qu</strong></a> on self-evolving agents for quantitative research.
-            </p>
           </section>
 
           <section className="content-section" id="research">
@@ -237,7 +233,7 @@ export default function Home() {
               <p>Reliable Self-Evolving Agents · LLM Reasoning & Verification · Imperfect Feedback</p>
             </div>
             <p className="research-lead">
-              Modern AI systems increasingly critique, verify, remember, and update their own behavior. I audit feedback, gate consequential updates, and test whether improvements persist. I use reasoning, scientific discovery, quantitative research, and adaptation as stress tests of the same question—not as unrelated application areas.
+              My research centers on reliable self-evolving agents, LLM reasoning and verification, and learning from imperfect feedback. I study this problem at three levels: deciding when feedback is reliable enough to act on, turning outcomes into persistent agent strategies, and repairing errors once they have entered a reasoning chain.
             </p>
             <div className="question-list">
               {researchQuestions.map((question, index) => (

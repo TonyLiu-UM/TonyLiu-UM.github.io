@@ -108,7 +108,7 @@ a { color: inherit; text-decoration: none; }
 .profile-interest { margin: 13px 0 22px; max-width: 210px; color: var(--blue-deep); font-family: var(--font-sans), Arial, sans-serif; font-size: 15px; font-weight: 500; line-height: 1.48; }
 .profile-facts { margin: 0; padding: 18px 0; border-block: 1px solid var(--line); list-style: none; }
 .profile-facts li { min-height: 31px; display: flex; align-items: center; gap: 10px; color: #685d69; font-size: 13px; }
-.profile-facts a:hover, .intro-note a:hover, .welcome-card a:hover { color: var(--blue); }
+.profile-facts a:hover, .welcome-card a:hover { color: var(--blue); }
 .profile-facts svg, .profile-links svg { color: var(--blue-deep); flex: 0 0 auto; }
 .profile-links { padding-top: 16px; display: flex; flex-direction: column; gap: 6px; }
 .profile-links a { width: fit-content; padding: 5px 0; display: inline-flex; align-items: center; gap: 10px; color: #5b4e5c; font-size: 13px; font-weight: 600; }
@@ -139,9 +139,8 @@ a { color: inherit; text-decoration: none; }
 }
 .welcome-card p { margin: 0 0 13px; text-wrap: pretty; letter-spacing: -.008em; }
 .welcome-card p:last-child { margin-bottom: 0; }
-.welcome-card strong, .intro-note strong { color: #6e3a5c; font-weight: 650; }
+.welcome-card strong { color: #6e3a5c; font-weight: 650; }
 .welcome-card em { color: #913d68; font-style: normal; font-weight: 600; }
-.intro-note { margin: 21px 4px 0; color: var(--ink-soft); font-size: 16px; }
 .credibility-strip {
   margin-top: 14px;
   display: grid;

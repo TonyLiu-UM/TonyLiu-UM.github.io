@@ -23,7 +23,7 @@ const researchQuestions = [
   {
     title: 'Can a reasoning system recover after an error becomes load-bearing?',
     copy: 'I trace how errors propagate through long reasoning chains and study whether independent evidence or formal verification can produce stable—not merely temporary—repairs.',
-    projects: 'Fault Dynamics · Lean2Isabelle',
+    projects: 'Fault Dynamics · Dual-Replay · Lean2Isabelle',
   },
 ];
 
@@ -75,6 +75,16 @@ const selectedProjects: Project[] = [
     role: 'Sole author',
     href: '/papers/metagate.pdf',
     linkLabel: 'Paper',
+  },
+  {
+    title: 'Dual-Replay Provenance',
+    subtitle: 'When correct answers conceal reliance on bad evidence',
+    status: 'Manuscript under review',
+    tone: 'review',
+    copy: 'Developed paired replays with and without additional evidence to distinguish ignoring a faulty tool output from recovering after relying on it. Pre-crop probes and visual-content controls test whether requested image evidence supports correction.',
+    detail: 'Identified 48 recoveries among 917 eligible main-study system–units across four chest-X-ray agent systems, all missed by terminal observation deletion. Under source corruption, calibrated compensation gains improved accuracy over uniform allocation by 2.5 percentage points across 480 requests in an offline study at a 25% continuation-authorization budget (95% CI: 1.0–4.2).',
+    detailLabel: 'Result',
+    role: 'First author · Research lead',
   },
   {
     title: 'CARE',
@@ -131,6 +141,13 @@ const publications = [
     venue: 'ICML 2026 AI for Math Workshop · Extended manuscript under review',
     label: 'Workshop',
     href: '/papers/lean2isabelle.pdf',
+  },
+  {
+    group: 'Manuscripts and preprints',
+    title: 'Ignored or Recovered? Dual-Replay Provenance for Chest X-Ray Agents',
+    authors: 'Guanyu Liu, Zhengshan Wang, Long Chen',
+    venue: 'Manuscript under review',
+    label: 'Manuscript',
   },
   {
     group: 'Manuscripts and preprints',
@@ -214,7 +231,7 @@ export default function Home() {
             <h1>How can AI improve without trusting the wrong feedback?</h1>
             <div className="welcome-card">
               <p>
-                I am a final-year undergraduate in <strong>Statistics and Data Science</strong> at the <a href="https://www.um.edu.mo/" target="_blank"><strong>University of Macau</strong></a>. I currently work with <a href="https://www.fst.um.edu.mo/personal/derek-wong/" target="_blank"><strong>Prof. Derek F. Wong</strong></a> at the <a href="http://nlp2ct.cis.um.edu.mo/" target="_blank"><strong>NLP2CT Lab</strong></a> on long-form language-model reasoning and stable error recovery, and with <a href="https://fic.um.edu.mo/zh-hant/people/mengqu/" target="_blank"><strong>Dr. Meng Qu</strong></a> on self-evolving agents for quantitative research. Previously, I was a Visiting Student at MAPLE Lab, Westlake University, advised by <a href="https://en.westlake.edu.cn/faculty/guojun-qi.html" target="_blank"><strong>Prof. Guojun Qi</strong></a>, where I studied target-label-free prompt selection under distribution shift.
+                I am a final-year undergraduate in <strong>Statistics and Data Science</strong> at the <a href="https://www.um.edu.mo/" target="_blank"><strong>University of Macau</strong></a>. I currently work with <a href="https://www.fst.um.edu.mo/personal/derek-wong/" target="_blank"><strong>Prof. Derek F. Wong</strong></a> at the <a href="http://nlp2ct.cis.um.edu.mo/" target="_blank"><strong>NLP2CT Lab</strong></a> on long-form language-model reasoning and stable error recovery, and with <a href="https://fic.um.edu.mo/zh-hant/people/mengqu/" target="_blank"><strong>Dr. Meng Qu</strong></a> on self-evolving agents for quantitative research. I also work with <strong>Prof. Long Chen</strong> on evidence dependence and recovery in multimodal agents. Previously, I was a Visiting Student at MAPLE Lab, Westlake University, advised by <a href="https://en.westlake.edu.cn/faculty/guojun-qi.html" target="_blank"><strong>Prof. Guojun Qi</strong></a>, where I studied target-label-free prompt selection under distribution shift.
               </p>
               <p>
                 Across these projects, I keep returning to one question: <em>how can an AI system improve from feedback without letting unreliable evidence corrupt its next decision?</em>
@@ -300,7 +317,7 @@ export default function Home() {
 
           <footer>
             <span>© 2026 Guanyu Liu</span>
-            <span>Last updated September 2026</span>
+            <span>Last updated November 2026</span>
           </footer>
         </div>
       </div>

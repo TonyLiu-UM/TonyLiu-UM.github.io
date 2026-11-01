@@ -84,7 +84,7 @@ const selectedProjects: Project[] = [
     copy: 'Developed paired replays with and without additional evidence to distinguish ignoring a faulty tool output from recovering after relying on it. Pre-crop probes and visual-content controls test whether requested image evidence supports correction.',
     detail: 'Identified 48 recoveries among 917 eligible main-study system–units across four chest-X-ray agent systems, all missed by terminal observation deletion. Under source corruption, calibrated compensation gains improved accuracy over uniform allocation by 2.5 percentage points across 480 requests in an offline study at a 25% continuation-authorization budget (95% CI: 1.0–4.2).',
     detailLabel: 'Result',
-    role: 'First author · Research lead',
+    role: 'Research Assistant · Apr–Sep 2026',
   },
   {
     title: 'CARE',

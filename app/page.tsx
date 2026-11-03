@@ -13,7 +13,7 @@ const researchQuestions = [
   {
     title: 'When is feedback reliable enough to act on?',
     copy: 'I audit signals before they control additional computation, adaptation, or memory—especially when their errors can make a system worse than a simple baseline.',
-    projects: 'MetaGate · IPU · Readiness-Gated UDA',
+    projects: 'MetaGate · IPU',
   },
   {
     title: 'How can agents learn from outcomes without overfitting to them?',
@@ -123,6 +123,16 @@ const additionalProjects: Project[] = [
     detailLabel: 'Result',
     role: 'Led at MAPLE Lab',
   },
+  {
+    title: 'BCCD',
+    subtitle: 'Learning segmentation from neighboring sections',
+    status: 'Manuscript under review',
+    tone: 'review',
+    copy: 'Developed a teacher that predicts a center slice’s segmentation from neighboring EM sections, then transfers its predictions to a student that sees only the center image. Source annotations teach both views the same task; confidence-filtered soft targets adapt the student without target annotations.',
+    detail: 'Outperformed the compared state-of-the-art results, including R4MITO and MaskTwins, on all four transfers, exceeding the best listed published F1 per task by 0.50-1.20 percentage points. Improved F1 by 1.00-1.80 points over matched center-view Mean Teacher, while retaining one-image, one-pass inference.',
+    detailLabel: 'Result',
+    role: 'Research Assistant · Mar 2025–Sep 2026',
+  },
 ];
 
 const publications = [
@@ -145,6 +155,13 @@ const publications = [
   {
     group: 'Manuscripts and preprints',
     title: 'Ignored or Recovered? Dual-Replay Provenance for Chest X-Ray Agents',
+    authors: 'Guanyu Liu, Zhengshan Wang, Long Chen',
+    venue: 'Manuscript under review',
+    label: 'Manuscript',
+  },
+  {
+    group: 'Manuscripts and preprints',
+    title: 'Learning Center-Section Segmentation from Neighbors: Blind-Center Context Distillation for Unsupervised Domain Adaptation',
     authors: 'Guanyu Liu, Zhengshan Wang, Long Chen',
     venue: 'Manuscript under review',
     label: 'Manuscript',

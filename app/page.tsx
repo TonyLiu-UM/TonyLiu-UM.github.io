@@ -1,5 +1,6 @@
 import {
   ArrowUpRight,
+  Award,
   BookOpen,
   BriefcaseBusiness,
   FileText,
@@ -13,12 +14,12 @@ const researchQuestions = [
   {
     title: 'When is feedback reliable enough to act on?',
     copy: 'I audit signals before they control additional computation, adaptation, or memory—especially when their errors can make a system worse than a simple baseline.',
-    projects: 'MetaGate · IPU',
+    projects: 'MetaGate · Selection Drift · IPU',
   },
   {
     title: 'How can agents learn from outcomes without overfitting to them?',
     copy: 'I design update rules that separate action from outcome reveal, validate proposed strategies, and retain only improvements that survive independent checks.',
-    projects: 'CARE · Selection-Aware Self-Evolution · MAPGD',
+    projects: 'CARE · Selection Drift · Selection-Aware Self-Evolution · MAPGD',
   },
   {
     title: 'Can a reasoning system recover after an error becomes load-bearing?',
@@ -64,6 +65,18 @@ const currentProjects: Project[] = [
 ];
 
 const selectedProjects: Project[] = [
+  {
+    title: 'Selection, Drift, and Immigration',
+    subtitle: 'Recursive self-training under finite populations',
+    status: 'Accepted · EACL 2027 Findings',
+    tone: 'accepted',
+    copy: 'Modeled recursive language-model self-training as verifier selection, reference injection, finite resampling, and regularized refitting, keeping correctness and low-probability modes in the same process.',
+    detail: 'Derived a stable correctness equilibrium and reference-coverage thresholds. In a five-seed 0.5B study, frozen-verifier selection improved recursive GSM8K accuracy by 3.81 points (95% CI: 1.79-5.84).',
+    detailLabel: 'Result',
+    role: 'Sole author',
+    href: '/papers/selection-drift.pdf',
+    linkLabel: 'Paper',
+  },
   {
     title: 'MetaGate',
     subtitle: 'When more test-time compute hurts',
@@ -136,6 +149,14 @@ const additionalProjects: Project[] = [
 ];
 
 const publications = [
+  {
+    group: 'Peer-reviewed publications',
+    title: 'Selection, Drift, and Immigration in Recursive Language-Model Self-Training',
+    authors: 'Guanyu Liu',
+    venue: 'EACL 2027 Findings · Accepted paper · Sole author',
+    label: 'Conference',
+    href: '/papers/selection-drift.pdf',
+  },
   {
     group: 'Peer-reviewed publications',
     title: 'When Difficulty Signals Are Unreliable: Auditing and Gating Sample-Count Adaptive Test-Time Compute',
@@ -235,6 +256,7 @@ export default function Home() {
             <li><MapPin size={16} /> Macau</li>
             <li><GraduationCap size={16} /> <a href="https://www.um.edu.mo/" target="_blank">University of Macau</a></li>
             <li><BriefcaseBusiness size={16} /> <a href="http://nlp2ct.cis.um.edu.mo/" target="_blank">NLP2CT Lab</a></li>
+            <li><Award size={16} /> Lou Tou Vo Mathematics Scholarship · Sole Recipient at University of Macau</li>
           </ul>
           <div className="profile-links">
             <a href="mailto:tonyliugy011@gmail.com"><Mail size={16} /> Email</a>
@@ -255,9 +277,9 @@ export default function Home() {
               </p>
             </div>
             <div className="credibility-strip" aria-label="Selected research highlights">
+              <span><strong>EACL 2027 Findings</strong> · Sole author</span>
               <span><strong>PRICAI 2026</strong> · Sole author</span>
               <span><strong>ICML 2026 AI for Math</strong> · Co-first author</span>
-              <span><strong>NLP2CT Lab</strong> · University of Macau</span>
             </div>
           </section>
 

@@ -24,7 +24,7 @@ const researchQuestions = [
   {
     title: 'Can a reasoning system recover after an error becomes load-bearing?',
     copy: 'I trace how errors propagate through long reasoning chains and study whether independent evidence or formal verification can produce stable—not merely temporary—repairs.',
-    projects: 'Fault Dynamics · Dual-Replay · Lean2Isabelle',
+    projects: 'LCoT · Dual-Replay · Lean2Isabelle',
   },
 ];
 
@@ -43,14 +43,14 @@ type Project = {
 
 const currentProjects: Project[] = [
   {
-    title: 'Fault Dynamics in Long-Form Reasoning',
-    subtitle: 'After a reasoning error becomes load-bearing',
-    status: 'Ongoing · NLP2CT Lab',
+    title: 'LCoT: Error Reuse and Repair in Long-Form Reasoning',
+    subtitle: 'How models handle errors they have already used',
+    status: 'ACL 2027 submission planned',
     tone: 'ongoing',
-    copy: 'Developing controlled replay experiments that begin after an incorrect intermediate result has already been used, then separately measure detection, repair, relapse, newly introduced errors, and task completion.',
-    detail: 'Testing whether independently derived evidence improves stable recovery beyond generic reflection.',
-    detailLabel: 'Current focus',
-    role: 'Supervised by Prof. Derek F. Wong',
+    copy: 'I led the method design, ran all experiments, and wrote the manuscript drafts. The protocol starts from a reasoning trace that has already used an incorrect claim and tracks what happens when the model continues with or without a prompt to check that claim.',
+    detail: 'The study generated 3,840 continuations from five model checkpoints and 96 constructed states. In matched comparisons, the check prompt was associated with 13.65 percentage points less error reuse and 8.63 points more repair.',
+    detailLabel: 'Result',
+    role: 'Aug 2026 to present · Supervised by Prof. Derek F. Wong',
   },
   {
     title: 'Selection-Aware Self-Evolving Agents',
@@ -80,7 +80,7 @@ const selectedProjects: Project[] = [
   {
     title: 'MetaGate',
     subtitle: 'When more test-time compute hurts',
-    status: 'Accepted · PRICAI 2026',
+    status: 'Oral presentation · PRICAI 2026',
     tone: 'accepted',
     copy: 'A target-label-free gate that compares independently calibrated difficulty signals and falls back to uniform sampling when their disagreement makes reallocation unsafe.',
     detail: 'Across 20 cross-model transfers, reduced harmful reallocations—cases below uniform sampling—from 13 to 1, while averaging 6.99 decoded samples per problem and 0.28 percentage points above uniform.',
@@ -116,12 +116,12 @@ const selectedProjects: Project[] = [
     subtitle: 'Cross-assistant proof translation',
     status: 'ICML 2026 AI for Math Workshop',
     tone: 'accepted',
-    copy: 'Built three datasets totaling 36,004 verified examples and trained SFT/GRPO models with Isabelle feedback; Minimal Valid Progress provides denser rewards for partially correct proof trajectories.',
-    detail: 'On MiniF2F-DSP, verifier-guided post-training increased semantic proof success from 49.8% to 54.3%.',
+    copy: 'Built the data pipeline for three datasets and trained models for statement translation and proof reconstruction. For proof training, I used Isabelle feedback and rewarded verifiable progress on partial proofs.',
+    detail: 'With verified target statements on LeanWorkbook-ISA, verifier-guided training raised semantic proof success from 49.8% to 54.3%.',
     detailLabel: 'Result',
     role: 'Co-first author',
     href: '/papers/lean2isabelle.pdf',
-    linkLabel: 'Workshop paper',
+    linkLabel: 'Paper',
   },
 ];
 
@@ -129,7 +129,7 @@ const additionalProjects: Project[] = [
   {
     title: 'IPU',
     subtitle: 'Target-label-free prompt selection',
-    status: 'Ongoing research',
+    status: 'Ongoing since June 2026',
     tone: 'ongoing',
     copy: 'Prompt selection normally requires many labeled target responses. IPU instead estimates prompt quality from stable agreement patterns across model responses, using source calibration and item-grouped nested cross-fitting to avoid tuning on target labels.',
     detail: 'On 40 GSM8K prompts, reached Spearman ρ=.721 versus .571 for mean pairwise agreement and .558 for majority pseudo-labeling; a low-budget fusion retained ρ=.680 with 80% fewer target responses.',
@@ -161,17 +161,25 @@ const publications = [
     group: 'Peer-reviewed publications',
     title: 'When Difficulty Signals Are Unreliable: Auditing and Gating Sample-Count Adaptive Test-Time Compute',
     authors: 'Guanyu Liu',
-    venue: 'PRICAI 2026 · Accepted regular paper · Sole author',
+    venue: 'PRICAI 2026 · Oral presentation · Sole author',
     label: 'Conference',
     href: '/papers/metagate.pdf',
   },
   {
     group: 'Peer-reviewed publications',
     title: 'Lean2Isabelle: Factorized Cross-Assistant Proof Translation',
-    authors: 'Guanyu Liu*, Jing Ma*, Derek F. Wong',
-    venue: 'ICML 2026 AI for Math Workshop · Extended manuscript under review',
+    authors: 'Guanyu Liu*, Jingkun Ma*, Derek F. Wong',
+    venue: 'ICML 2026 AI for Math Workshop · Extended version planned for submission to ACL 2027',
     label: 'Workshop',
     href: '/papers/lean2isabelle.pdf',
+  },
+  {
+    group: 'Peer-reviewed publications',
+    title: 'MAPGD: Multi-Agent Prompt Gradient Descent for Collaborative Prompt Optimization',
+    authors: 'Yichen Han, Yuhang Han, Siteng Huang, Guanyu Liu, Yujia Zhang, Jianwei Shi, Isaac N Shi, Lewei He, Tianyu Shi',
+    venue: 'Transactions on Machine Learning Research (TMLR) · 2026',
+    label: 'Journal',
+    href: 'https://openreview.net/forum?id=3kmaMv2r2Z',
   },
   {
     group: 'Manuscripts and preprints',
@@ -194,13 +202,6 @@ const publications = [
     venue: 'Manuscript under review',
     label: 'Manuscript',
     href: '/papers/care.pdf',
-  },
-  {
-    group: 'Manuscripts and preprints',
-    title: 'MAPGD: Multi-Agent Prompt Gradient Descent for Collaborative Prompt Optimization',
-    authors: 'Yue Han, Bowen Liu, Zihan Zhou, Guanyu Liu, et al.',
-    venue: 'Manuscript under review · Preliminary version at NeurIPS 2025 SEA Workshop',
-    label: 'Manuscript',
   },
 ];
 
@@ -256,7 +257,7 @@ export default function Home() {
             <li><MapPin size={16} /> Macau</li>
             <li><GraduationCap size={16} /> <a href="https://www.um.edu.mo/" target="_blank">University of Macau</a></li>
             <li><BriefcaseBusiness size={16} /> <a href="http://nlp2ct.cis.um.edu.mo/" target="_blank">NLP2CT Lab</a></li>
-            <li><Award size={16} /> Lou Tou Vo Mathematics Scholarship · Sole Recipient at University of Macau</li>
+            <li><Award size={16} /> Lou Tou Vo Mathematics Scholarship</li>
           </ul>
           <div className="profile-links">
             <a href="mailto:tonyliugy011@gmail.com"><Mail size={16} /> Email</a>
@@ -278,7 +279,7 @@ export default function Home() {
             </div>
             <div className="credibility-strip" aria-label="Selected research highlights">
               <span><strong>EACL 2027 Findings</strong> · Sole author</span>
-              <span><strong>PRICAI 2026</strong> · Sole author</span>
+              <span><strong>PRICAI 2026</strong> · Oral presentation · Sole author</span>
               <span><strong>ICML 2026 AI for Math</strong> · Co-first author</span>
             </div>
           </section>

@@ -41,9 +41,9 @@ type Project = {
 
 const currentProjects: Project[] = [
   {
-    title: 'LCoT',
-    subtitle: 'Error reuse and repair in long-form reasoning',
-    status: 'Manuscript in preparation',
+    title: 'Post-Consumption Error Fate in Reasoning Traces: A State-Paired Protocol for Reuse and Repair',
+    subtitle: 'LCoT',
+    status: 'Manuscript in preparation for ACL 2027',
     tone: 'ongoing',
     copy: 'I led the design of a protocol that compares continuations from the same point after a model has used an incorrect claim. I ran all the experiments and wrote the current manuscript draft.',
     detail: 'The study includes 3,840 continuations from five model checkpoints and 96 constructed states. In matched comparisons, prompting the model to check the claim was associated with 13.65 percentage points less error reuse and 8.63 points more repair.',
@@ -81,7 +81,7 @@ const selectedProjects: Project[] = [
     copy: 'I model what happens when a language model repeatedly trains on its own outputs. The model tracks how verifier selection changes accuracy and how much reference data can help retain rare solution modes.',
     detail: 'The analysis gives conditions for a stable correctness rate and thresholds for reference coverage. Across five seeds with a 0.5B model, frozen-verifier selection improved recursive GSM8K accuracy by 3.81 percentage points (95% CI 1.79–5.84).',
     detailLabel: 'Results',
-    role: 'Sole author',
+    role: 'Sole author · Mar–Aug 2026',
     href: '/papers/selection-drift.pdf',
     linkLabel: 'Paper',
   },
@@ -102,7 +102,7 @@ const selectedProjects: Project[] = [
     subtitle: 'Translating proofs from Lean to Isabelle',
     status: 'ICML 2026 AI for Math Workshop',
     tone: 'accepted',
-    copy: 'I built the data pipeline for three datasets and trained models for statement translation and proof reconstruction. During proof training, I used feedback from Isabelle to reward progress on partial proofs. An extended manuscript is in preparation.',
+    copy: 'I built the data pipeline for three datasets and trained models for statement translation and proof reconstruction. During proof training, I used feedback from Isabelle to reward progress on partial proofs. An extended manuscript is in preparation for ACL 2027.',
     detail: 'With verified target statements on LeanWorkbook-ISA, verifier-guided training raised semantic proof success from 49.8% to 54.3%.',
     detailLabel: 'Results',
     role: 'Co-first author',
@@ -112,7 +112,7 @@ const selectedProjects: Project[] = [
   {
     title: 'Dual-Replay',
     subtitle: 'Testing evidence dependence in chest X-ray agents',
-    status: 'Manuscript under review',
+    status: 'Under review at ICASSP 2027',
     tone: 'review',
     copy: 'I replayed agent runs with clean and corrupted tool outputs, once with the existing evidence and once with access to new evidence. I used pre-crop probes and image controls to check whether the new image content helped the agent correct its answer.',
     detail: 'I found 48 recoveries in 917 eligible evaluations across four systems. Deleting tool outputs at the end missed the earlier dependence in all 48. In an offline test with corrupted outputs, I used estimated recovery gains to select which 25% of 480 requests could continue. Accuracy was 2.5 percentage points above uniform allocation (95% CI 1.0–4.2).',
@@ -122,7 +122,7 @@ const selectedProjects: Project[] = [
   {
     title: 'CARE',
     subtitle: 'Choosing reaction experiments under a fixed budget',
-    status: 'Manuscript under review',
+    status: 'Under review at AAAI 2027',
     tone: 'review',
     copy: 'I designed the decision logic that checks a language model’s scoring program and compares its recommendation with a numerical default. The controller logs each choice before seeing the outcome and uses the result to decide whether to keep, revise, or replace the program.',
     detail: 'In offline replay across eight tasks with 30 matched seeds per task, CARE ranked first among the evaluated methods on normalized regret, best-so-far AUC, and Top-1% Success@15.',
@@ -137,7 +137,7 @@ const additionalProjects: Project[] = [
   {
     title: 'BCCD',
     subtitle: 'Mitochondrial segmentation from neighboring sections',
-    status: 'Manuscript under review',
+    status: 'Under review at ICASSP 2027',
     tone: 'review',
     copy: 'I trained a teacher to predict the center section’s mask from neighboring electron microscopy sections. Its high-confidence predictions guide a student that sees only the center section. The student still uses one image and one pass at inference.',
     detail: 'Across four transfer tasks, BCCD exceeded the best compared published F1 for each task by 0.50–1.20 percentage points, including comparisons with R4MITO and MaskTwins. It gained 1.00–1.80 points over a matched center-view Mean Teacher.',
